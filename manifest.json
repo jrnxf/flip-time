@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "FlipTime",
+    "description": "A simple new tab clock extension",
+    "version": "1.0.0",
+    "icons": { "128": "icon128.png" },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": ["tabs"],
+    "background": {
+        "scripts": [
+            "assets/js/jquery-slim.min.js",
+            "assets/js/flipclock.js",
+            "assets/js/moment.min.js",
+            "assets/js/index.js"
+        ],
+        "persistent": false
+    }
+
+}
