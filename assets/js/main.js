@@ -4,7 +4,8 @@ function updateDate() {
 
 $(document).ready(function () {
     $('#clock').FlipClock({
-        clockFace: 'TwelveHourClock'
+        clockFace: 'TwelveHourClock',
+        showSeconds: false,
     });
 
     updateDate();

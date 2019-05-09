@@ -1922,10 +1922,10 @@ var FlipClock;
 			}
 
 			this.createDivider();
-			this.createDivider();
+			// this.createDivider();
 
 			$(this.dividers[0]).insertBefore(this.lists[this.lists.length - 2].$el);
-			$(this.dividers[1]).insertBefore(this.lists[this.lists.length - 4].$el);
+			// $(this.dividers[1]).insertBefore(this.lists[this.lists.length - 4].$el);
 
 			this.base();
 		},
@@ -2314,11 +2314,11 @@ var FlipClock;
 			this.base(time);
 			this.meridiumText = this.getMeridium();
 			this.meridium = $([
-				'<ul class="flip-clock-meridium">',
-					'<li>',
-						'<a href="#">'+this.meridiumText+'</a>',
-					'</li>',
-				'</ul>'
+				// '<ul class="flip-clock-meridium">',
+				// 	'<li>',
+				// 		'<a href="#">'+this.meridiumText+'</a>',
+				// 	'</li>',
+				// '</ul>'
 			].join(''));
 
 			this.meridium.insertAfter(this.lists[this.lists.length-1].$el);
