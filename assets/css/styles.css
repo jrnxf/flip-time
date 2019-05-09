@@ -1,36 +1,63 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Nunito", sans-serif;
-    font-weight: 900;
-    color: #adadad;
-    background: #222222;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  color: #adadad;
+  background: #51637e;
 }
 
 #container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 1s;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s;
 }
 
 #date {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 1.5em;
-    font-weight: 700;
-
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+  transition: all .3s linear;
 }
 
-#clock-wrapper { transform: scale(1.5); }
-@media (min-width: 770px)   and (min-height: 500px)     { #clock-wrapper { transform: scale(2.25); } }
-@media (min-width: 1020px)  and (min-height: 500px)     { #clock-wrapper { transform: scale(3); } }
-@media (min-width: 1350px)  and (min-height: 500px)     { #clock-wrapper { transform: scale(4); } }
+#clock-wrapper {
+  margin: 0.5em;
+  transform: scale(1.5);
+  transition: all .3s linear;
+}
+
+@media (min-width: 770px) and (min-height: 500px) {
+  #clock-wrapper {
+    transform: scale(2.25);
+  }
+}
+
+@media (min-width: 1020px) and (min-height: 500px) {
+  #clock-wrapper {
+    transform: scale(3);
+  }
+  #date {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1350px) and (min-height: 500px) {
+  #clock-wrapper {
+    transform: scale(4);
+  }
+}
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
