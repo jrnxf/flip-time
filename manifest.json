@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "FlipTime",
     "description": "A simple flip clock new tab extension",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
         "128": "assets/img/icon128.png"
     },
@@ -14,13 +14,5 @@
     },
     "permissions": [
         "tabs"
-    ],
-    "background": {
-        "scripts": [
-            "assets/js/jquery-slim.min.js",
-            "assets/js/flipclock.js",
-            "assets/js/moment.min.js",
-            "assets/js/main.js"
-        ]
-    }
+    ]
 }
