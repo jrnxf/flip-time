@@ -1,18 +1,16 @@
 {
-    "manifest_version": 2,
-    "name": "FlipTime",
-    "description": "A simple flip clock new tab extension",
-    "version": "1.1.2",
-    "icons": {
-        "128": "assets/img/icon128.png"
-    },
-    "browser_action": {
-        "default_icon": "assets/img/icon.png"
-    },
-    "chrome_url_overrides": {
-        "newtab": "index.html"
-    },
-    "permissions": [
-        "tabs"
-    ]
+  "manifest_version": 2,
+  "name": "FlipTime",
+  "description": "A simple flip clock new tab extension",
+  "version": "1.1.2",
+  "icons": {
+    "128": "assets/img/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/img/icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["tabs"]
 }

@@ -2,8 +2,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 900;
+  background: #edf2f7;
 }
 
 #container {
@@ -20,6 +21,7 @@ body {
   left: 10px;
   font-size: 1.5em;
   font-weight: 700;
+  color: #323434;
 }
 
 #clock-wrapper {
@@ -29,13 +31,13 @@ body {
 
 @media (min-width: 770px) and (min-height: 350px) {
   #clock-wrapper {
-    transform: scale(1.5);
+    zoom: 2;
   }
 }
 
 @media (min-width: 1020px) and (min-height: 350px) {
   #clock-wrapper {
-    transform: scale(2);
+    zoom: 3;
   }
   #date {
     font-size: 2em;

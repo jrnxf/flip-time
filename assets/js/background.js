@@ -1,14 +1,13 @@
 function updateDate() {
-    $('#date').html(moment().format('dddd[,] MMMM Do[,] YYYY'));
+  $("#date").html(moment().format("dddd[,] MMMM Do[,] YYYY"));
 }
 
 $(document).ready(function () {
-    $('#clock').FlipClock({
-        clockFace: 'TwelveHourClock',
-        showSeconds: false,
-    });
+  $("#clock").FlipClock({
+    clockFace: "TwelveHourClock",
+    showSeconds: false,
+  });
 
-    updateDate();
-    setInterval(updateDate, 1000);
+  updateDate();
+  setInterval(updateDate, 1000);
 });
-
