@@ -17,30 +17,41 @@ body {
 
 #date {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  font-size: 1.5em;
-  font-weight: 700;
+  bottom: 5px;
+  left: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
   color: #323434;
+  text-transform: uppercase;
 }
 
-#clock-wrapper {
-  margin: 0.5em;
-  transform: scale(1);
-}
-
-@media (min-width: 770px) and (min-height: 350px) {
+@media (min-width: 610px) and (min-height: 200px) {
   #clock-wrapper {
     zoom: 2;
   }
 }
 
-@media (min-width: 1020px) and (min-height: 350px) {
+@media (min-width: 900px) and (min-height: 300px) {
   #clock-wrapper {
     zoom: 3;
   }
-  #date {
-    font-size: 2em;
+}
+
+@media (min-width: 1200px) and (min-height: 400px) {
+  #clock-wrapper {
+    zoom: 4;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 500px) {
+  #clock-wrapper {
+    zoom: 5;
+  }
+}
+
+@media (min-width: 1800px) and (min-height: 600px) {
+  #clock-wrapper {
+    zoom: 6;
   }
 }
 
