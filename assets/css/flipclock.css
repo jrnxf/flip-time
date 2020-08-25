@@ -1,3 +1,67 @@
+:root {
+  --clock-background-color: #2d3748;
+  --clock-divider: #1a202c;
+  --body-background: #4a5568;
+  --clock-text-color: #a0aec0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  background-color: var(--body-background);
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#date {
+  position: absolute;
+  bottom: 1em;
+  left: 1.25em;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #a0aec0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 610px) and (min-height: 200px) {
+  #clock-wrapper {
+    zoom: 2;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 300px) {
+  #clock-wrapper {
+    zoom: 3;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 400px) {
+  #clock-wrapper {
+    zoom: 4;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 500px) {
+  #clock-wrapper {
+    zoom: 5;
+  }
+}
+
+@media (min-width: 1800px) and (min-height: 600px) {
+  #clock-wrapper {
+    zoom: 6;
+  }
+}
+
 /* Get the bourbon mixin from http://bourbon.io */
 /* Reset */
 .flip-clock-wrapper * {
@@ -138,7 +202,7 @@
   -o-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
   top: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--clock-divider-color);
 }
 
 .flip-clock-wrapper ul li a div.up:after {
@@ -170,10 +234,10 @@
   z-index: 1;
   width: 100%;
   height: 200%;
-  color: #ccc;
+  color: var(--clock-text-color);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: #333;
+  background-color: var(--clock-background-color);
   border-radius: 6px;
   font-size: 70px;
 }
@@ -192,7 +256,7 @@
 }
 
 .flip-clock-wrapper .flip {
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .flip-clock-wrapper ul.play li.flip-clock-active {
@@ -216,12 +280,12 @@
 
 .flip-clock-dot {
   display: block;
-  background: #323434;
+  background: var(--clock-background-color);
   width: 10px;
   height: 10px;
   position: absolute;
   border-radius: 50%;
-  /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
   left: 5px;
 }
 
