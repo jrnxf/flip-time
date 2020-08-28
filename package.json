@@ -1,0 +1,23 @@
+{
+  "name": "flip-time",
+  "version": "1.2.3",
+  "description": "minimalist flip clock displays time on each new tab",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloradocolby/fliptime-chrome-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coloradocolby/fliptime-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/coloradocolby/fliptime-chrome-extension#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
