@@ -359,9 +359,9 @@ body {
 
 .flip-clock-wrapper ul.play li.flip-clock-active .down {
   z-index: 2;
-  -webkit-animation: turn 0.5s 0.5s linear both;
-  -moz-animation: turn 0.5s 0.5s linear both;
-  animation: turn 0.5s 0.5s linear both;
+  -webkit-animation: turn 500ms 500ms linear both;
+  -moz-animation: turn 500ms 500ms linear both;
+  animation: turn 500ms 500ms linear both;
 }
 
 @-webkit-keyframes turn {
@@ -406,9 +406,9 @@ body {
 
 .flip-clock-wrapper ul.play li.flip-clock-before .up {
   z-index: 2;
-  -webkit-animation: turn2 0.5s linear both;
-  -moz-animation: turn2 0.5s linear both;
-  animation: turn2 0.5s linear both;
+  -webkit-animation: turn2 500ms linear both;
+  -moz-animation: turn2 500ms linear both;
+  animation: turn2 500ms linear both;
 }
 
 @-webkit-keyframes turn2 {
@@ -469,9 +469,11 @@ body {
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
   background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
-  -webkit-animation: show 0.5s linear both;
-  -moz-animation: show 0.5s linear both;
-  animation: show 0.5s linear both;
+  -webkit-animation: show 500ms linear both;
+  -moz-animation: show 500ms linear both;
+  animation: show 500ms linear both;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
@@ -487,9 +489,11 @@ body {
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
   background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
-  -webkit-animation: hide 0.5s 0.3s linear both;
-  -moz-animation: hide 0.5s 0.3s linear both;
-  animation: hide 0.5s 0.3s linear both;
+  -webkit-animation: hide 500ms 300ms linear both;
+  -moz-animation: hide 500ms 300ms linear both;
+  animation: hide 500ms 300ms linear both;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 /*DOWN*/
@@ -506,9 +510,9 @@ body {
   background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
   background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
   background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
-  -webkit-animation: show 0.5s linear both;
-  -moz-animation: show 0.5s linear both;
-  animation: show 0.5s linear both;
+  -webkit-animation: show 500ms linear both;
+  -moz-animation: show 500ms linear both;
+  animation: show 500ms linear both;
 }
 
 .flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
@@ -524,9 +528,9 @@ body {
   background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
   background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
   background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
-  -webkit-animation: hide 0.5s 0.3s linear both;
-  -moz-animation: hide 0.5s 0.3s linear both;
-  animation: hide 0.5s 0.2s linear both;
+  -webkit-animation: hide 500ms 300ms linear both;
+  -moz-animation: hide 500ms 300ms linear both;
+  animation: hide 500ms 0.2s linear both;
 }
 
 @-webkit-keyframes show {
