@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "flip-time",
   "description": "minimalist flip clock displays time on each new tab",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "icons": {
     "128": "assets/img/icon128.png"
   },

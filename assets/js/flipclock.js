@@ -252,19 +252,6 @@ var FlipClock;
     },
 
     /**
-     * Log a string into the console if it exists
-     *
-     * @param 	string 	The name of the option
-     * @return	mixed
-     */
-
-    log: function (str) {
-      if (window.console && console.log) {
-        console.log(str);
-      }
-    },
-
-    /**
      * Get an single option value. Returns false if option does not exist
      *
      * @param 	string 	The name of the option
@@ -552,7 +539,6 @@ var FlipClock;
             list.play();
           }
 
-          console.log({ list });
           list.select(digit);
         } else {
           t.addDigit(digit);
@@ -862,7 +848,7 @@ var FlipClock;
           }
         });
       } else {
-        t.log("Trying to start timer when countdown already at 0");
+        // "Trying to start timer when countdown already at 0"
       }
     },
 
@@ -1514,8 +1500,6 @@ var FlipClock;
       if (!date) {
         date = this.getDateObject();
       }
-
-      // console.log(date);
 
       var hours = date.getHours();
       var merid = hours > 12 ? "PM" : "AM";
