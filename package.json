@@ -1,6 +1,6 @@
 {
   "name": "flip-time",
-  "version": "1.2.3",
+  "version": "1.3.4",
   "description": "minimalist flip clock displays time on each new tab",
   "main": "index.js",
   "scripts": {

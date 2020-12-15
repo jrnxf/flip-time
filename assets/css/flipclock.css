@@ -1,26 +1,31 @@
 :root {
   --font-size: 90px;
+  --body-background: #475569;
 }
 
 .light {
-  --clock-background-color: #334155;
-  --clock-divider: #1e293b;
   --body-background: #475569;
+  --clock-background: #334155;
+  --clock-divider: #1e293b;
   --clock-text-color: #cbd5e1;
 }
 
 .dark {
-  --clock-background-color: #192334;
+  --body-background: #141b27;
   --clock-divider: #334155;
-  --body-background: #1e293b;
+  --clock-background: #1e293b;
   --clock-text-color: #94a3b8;
 }
 
-.white {
-  --clock-background-color: #efefef;
-  --clock-divider: #eeeeee;
-  --body-background: #ffffff;
-  --clock-text-color: #949494;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 html,
@@ -30,6 +35,8 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   background-color: var(--body-background);
+  color: #a0aec0;
+  overflow: hidden;
 }
 
 #container {
@@ -42,18 +49,30 @@ body {
 
 #date {
   position: absolute;
-  bottom: 1em;
-  left: 1.25em;
+  bottom: 10px;
+  left: 10px;
   font-size: 0.8em;
-  color: #a0aec0;
   text-transform: uppercase;
+  user-select: none;
 }
 
-/* @media (min-width: 610px) and (min-height: 200px) {
-  #clock-wrapper {
-    zoom: 1.5;
-  }
-} */
+.theme-switcher {
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  text-transform: uppercase;
+  border: 2px solid #a0aec0;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+#clock-wrapper {
+  animation: fadeInUp cubic-bezier(0.25, 0.85, 0.4, 0.9) 600ms;
+  -webkit-animation: fadeInUp cubic-bezier(0.25, 0.85, 0.4, 0.9) 600ms;
+}
 
 @media (min-width: 900px) and (min-height: 300px) {
   #clock-wrapper {
@@ -141,13 +160,6 @@ body {
 .flip-clock-meridium a:hover {
   color: var(--clock-text-color);
 }
-
-/* .flip-clock-wrapper {
-  text-align: center;
-  position: relative;
-  width: 100%;
-  margin: 1em;
-} */
 
 .flip-clock-wrapper:before,
 .flip-clock-wrapper:after {
@@ -255,7 +267,7 @@ body {
   color: var(--clock-text-color);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: var(--clock-background-color);
+  background-color: var(--clock-background);
   border-radius: 10px;
   font-size: 70%;
   line-height: var(--font-size);
@@ -299,7 +311,7 @@ body {
 
 .flip-clock-dot {
   display: block;
-  background: var(--clock-background-color);
+  background: var(--clock-background);
   width: 10px;
   height: 10px;
   position: absolute;

@@ -8,7 +8,7 @@
     minimalist flip clock displays time on each new tab
   </p>
   
-  <a href="https://chrome.google.com/webstore/detail/flip-time/apbapccfgemhlnbckbjjdbkpbkllbbib?hl=en&authuser=0"> Download Here</a>
+  <a href="https://chrome.google.com/webstore/detail/flip-time/apbapccfgemhlnbckbjjdbkpbkllbbib?hl=en&authuser=0">Download Here</a>
 </div>
 
 <div align="center" style="margin: 1em;">
