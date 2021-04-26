@@ -1,13 +1,13 @@
 <div align="center">
   <h1>flip-time</h1>
   <kbd>
-    <img src="./assets/img/cover.png" alt="flip-time screenshot" />
+    <img src="./img/cover.png" alt="flip-time screenshot" />
   </kbd>
 
   <p align="center">
     minimalist flip clock displays time on each new tab
   </p>
-  
+
   <a href="https://chrome.google.com/webstore/detail/flip-time/apbapccfgemhlnbckbjjdbkpbkllbbib?hl=en&authuser=0">Download Here</a>
 </div>
 
