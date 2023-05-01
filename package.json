@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/coloradocolby/flip-time#readme",
   "devDependencies": {
-    "live-server": "^1.1.0"
+    "live-server": "^1.2.2"
   }
 }
